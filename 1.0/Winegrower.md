@@ -47,9 +47,16 @@ Property    | Expected Type               | Type origin                        |
 
 ## New definitions
 
-These are the properties proposed in addition, in the [OpenWines.org](http://openwines.org) namespace.
+### DISCLAIMERS
+
+- This is Work In Progress
+- Each new property mentioned here always needs to be evaluated accurately before being accepted. Expect to face contradictions ;-) 
+
+These are the properties actually proposed in addition, in the [OpenWines.org](http://openwines.org) namespace.
 
 ### `isLandowner`
+
+Motivation: In french vocabulary, many sub-types exists to define more precisely the english `winegrower` : `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`. Each one is a variant, but some of them have common the fact that the winegrower owns the lands where the grapes are grown and harvested.
 
 Property    | Expected Type               | Description | Example
 ----------- | --------------------------- | ----------- | -------
