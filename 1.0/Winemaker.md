@@ -3,6 +3,11 @@
 
 # Winemaker
 
+This document is a collaborative terminology standard recommandation.
+Its purpose is to help information systems designers to represent models and instances of the `winemaker` concept.
+
+## Definition
+
 `winemaker` (plural `winemakers`)
 
 - a person or company that makes wine
