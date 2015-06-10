@@ -75,7 +75,7 @@ Property    | Expected Type               | Description | Example
   "@type": "Winegrower",
   "ow:isLandowner": true,  
   "address":
-    "@type": "sc:PostalAddress",
+    "@type": "PostalAddress",
     "addressLocality": "Sainte Lumine de Clisson",
     "addressRegion": "Pays de la Loire",
     "postalCode": "44190",
