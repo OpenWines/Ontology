@@ -3,7 +3,10 @@
 
 # Winemaker
 
-`winemaker` (plural `winemakers`): a person or company that makes wine
+`winemaker`: (plural `winemakers`)
+
+- a person or company that makes wine
+
 (source: [wiktionary](https://en.wiktionary.org/wiki/winemaker))
 
 ## THIS IS A DRAFT
@@ -41,7 +44,7 @@ This entity is an overlay on top of the core Schema's [Winery](https://schema.or
 }
 ```
 
-This approach allows also to define french terms spelled sub-types: `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`, or the english `winegrower`.
+This approach allows also to define french terms spelled sub-types: `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`, or the english `winegrower` / `vintner`.
 
 ## Inherited definitions
 
@@ -73,7 +76,7 @@ These are the properties actually proposed in addition, in the [OpenWines.org](h
 
 ### `isLandowner`
 
-Motivation: In both french and english vocabulary, many sub-types exists to define more precisely the person that make wine : (english) `winegrower`, (french) `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`. Each one is a variant of a global job family, but some of them have common the fact that they describe a person who owns the lands where the grapes are grown and harvested.
+Motivation: In both french and english vocabulary, many sub-types exists to define more precisely the person that make wine : (english) `winegrower`, `vintner`, (french) `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`. Each one is a variant of a global job family, but some of them have common the fact that they describe a person who owns the lands where the grapes are grown and harvested.
 
 Property    | Expected Type               | Description | Example
 ----------- | --------------------------- | ----------- | -------
