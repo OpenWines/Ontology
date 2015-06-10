@@ -58,7 +58,7 @@ Property    | Expected Type               | Description | Example
       { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
   ],
   "@type": "Winegrower",
-  "ow:isLandowner" : true,
+  "ow:isLandowner": true,
   "name" : "Durand Vigneron"
 }
 ```
@@ -73,7 +73,7 @@ Property    | Expected Type               | Description | Example
       { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
   ],
   "@type": "Winegrower",
-  "ow:isLandowner" : true,  
+  "ow:isLandowner": true,  
   "address":
     "@type": "sc:PostalAddress",
     "addressLocality": "Sainte Lumine de Clisson",
