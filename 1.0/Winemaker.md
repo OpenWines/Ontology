@@ -85,9 +85,11 @@ Ontologies namespaces, such as [Schema.org](http://schema.org), provide a core, 
 
 [See how Extension Mechanism works](https://schema.org/docs/extension.html) on Schema.org website.
 
-`@vocab` actually allow you to use an existing vocabulary in an inherited entity definition  
+`@vocab` actually allows you to use an existing vocabulary in an inherited entity definition  
 
-This entity is an overlay on top of the core Schema's [Winery](https://schema.org/Winery) definition
+This entity is an overlay on top of the core Schema's [Winery](https://schema.org/Winery) definition.
+
+Example:
 
 ```
 {
@@ -113,6 +115,8 @@ Inherited from [Schema.org](https://schema.org/memberOf)'s `memberOf`.
 Property    | Expected Type               | Type origin                        | Description | Example
 ----------- | --------------------------- | ---------------------------------- | ----------- | -------
 [`memberOf`](https://schema.org/memberOf) | [`Person`](https://schema.org/Person), [`Organization`](https://schema.org/Organization) | [`Winery`](https://schema.org/Winery)| memberships | see below
+
+Example:
 
 ```json
 {
@@ -140,6 +144,8 @@ Motivation: In both french and english vocabulary, many sub-types exists to defi
 Property    | Expected Type               | Description | Example
 ----------- | --------------------------- | ----------- | -------
 `ow:isLandowner` | [`Boolean`](https://schema.org/Boolean) | owns the lands where he produces his wines | `true`
+
+Example :
 
 ```json
 {
