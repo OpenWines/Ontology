@@ -10,7 +10,14 @@ Its purpose is to help information systems designers to represent models and ins
 
 This document is merely a public working draft of a potential specification. It has no official standing of any kind and does not represent the support or consensus of any standards organisation.
 
-This document is an experimental work in progress. Use [Github] (online editor)](https://help.github.com/articles/editing-files-in-another-user-s-repository/) to propose your changes.
+This document is an experimental work in progress. Use [Github (online editor)](https://help.github.com/articles/editing-files-in-another-user-s-repository/) to propose your changes as new pull request.
+
+## Discussions
+
+This is a collaborative draft, join the discussion on Slack:
+
+- Already on Slack? [Sign in](https://openwines.slack.com/messages/semantics/)
+- [Get an invitation](https://openwines-slackin.herokuapp.com/) first, then [join us](https://openwines.slack.com/messages/semantics/)
 
 ## Authors
 
