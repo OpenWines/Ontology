@@ -1,4 +1,11 @@
 
+![OpenWines](https://raw.githubusercontent.com/OpenWines/Resources/master/elements/favicons/android-icon-96x96.png)
+
+# Winemaker
+
+`winemaker` (plural `winemakers`): a person or company that makes wine
+(source: [wiktionary](https://en.wiktionary.org/wiki/winemaker))
+
 ## THIS IS A DRAFT
 
 Current status: Proposal, RFC. Use [Github online editor to propose your changes](https://help.github.com/articles/editing-files-in-another-user-s-repository/).
@@ -29,16 +36,16 @@ This entity is an overlay on top of the core Schema's [Winery](https://schema.or
       "http://schema.org/",
       { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
   ],
-  "@type": "Winegrower",             <-- this entity type, defined in this context
+  "@type": "Winemaker",             <-- this entity type, defined in this context
   "name" : "Durand Vigneron"         <-- name property inherited from Schema.org's Winery entity
 }
 ```
 
-This approach also allow to define french terms spelled sub-types: `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`, which are more precise entities from the english `winegrower`.
+This approach also allow to define french terms spelled sub-types: `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`, which are more precise entities from the english `winegrower` or `winemaker`.
 
 ## Inherited definitions
 
-These properties are given only for information, the whole list can be found in the [`Winegrower`] parent type definition on [Schema.org](https://schema.org), so this list is not intended to be exhaustive.
+These properties are given only for information, the whole list can be found in the [`Winery`] parent type definition on [Schema.org](https://schema.org), so this list is not intended to be exhaustive.
 
 ### Ex: Schema's [`memberOf`](https://schema.org/memberOf)
 
@@ -66,7 +73,7 @@ These are the properties actually proposed in addition, in the [OpenWines.org](h
 
 ### `isLandowner`
 
-Motivation: In french vocabulary, many sub-types exists to define more precisely the english `winegrower` : `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`. Each one is a variant, but some of them have common the fact that the winegrower owns the lands where the grapes are grown and harvested.
+Motivation: In both french and english vocabulary, many sub-types exists to define more precisely the person that make wine : (english) `winemaker`, `winegrower`, (french) `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`. Each one is a variant of a global job family, but some of them have common the fact that they describe a person who owns the lands where the grapes are grown and harvested.
 
 Property    | Expected Type               | Description | Example
 ----------- | --------------------------- | ----------- | -------
@@ -78,7 +85,7 @@ Property    | Expected Type               | Description | Example
       "http://schema.org/",
       { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
   ],
-  "@type": "Winegrower",
+  "@type": "Winemaker",
   "ow:isLandowner": true,
   "name" : "Durand Vigneron"
 }
@@ -93,7 +100,7 @@ Property    | Expected Type               | Description | Example
       "http://schema.org/",
       { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
   ],
-  "@type": "Winegrower",
+  "@type": "Winemakerr",
   "ow:isLandowner": true,  
   "address": {
     "@type": "PostalAddress",
