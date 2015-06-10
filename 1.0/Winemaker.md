@@ -88,7 +88,9 @@ This approach allows also to define french terms spelled sub-types: `vigneron`, 
 
 These properties are given only for information, the whole list can be found in the [`Winery`] parent type definition on [Schema.org](https://schema.org), so this list is not intended to be exhaustive.
 
-### Ex: Schema's [`memberOf`](https://schema.org/memberOf)
+### `memberOf`
+
+Inherited from [Schema.org](https://schema.org/memberOf)'s `memberOf`.
 
 Property    | Expected Type               | Type origin                        | Description | Example
 ----------- | --------------------------- | ---------------------------------- | ----------- | -------
@@ -105,12 +107,13 @@ Property    | Expected Type               | Type origin                        |
 
 ## New definitions
 
-### DISCLAIMERS
+These properties are proposed in addition, from the [OpenWines.org](http://openwines.org) initiative.
 
-- This is Work In Progress
-- Each new property mentioned here always needs to be evaluated accurately before being accepted. Expect to face contradictions ;-) 
+__Disclaimers__
 
-These are the properties actually proposed in addition, in the [OpenWines.org](http://openwines.org) namespace.
+- Status: _Work In Progress_
+- We're building a collaborative terminology standard recommandation: Each property newly proposed here always needs to be evaluated accurately first before being accepted. Expect to face some contradiction ;-) 
+
 
 ### `isLandowner`
 
