@@ -1,26 +1,35 @@
 
 ## THIS IS A DRAFT
 
+Current status: Proposal, RFC. Use [Github online editor to propose your changes](https://help.github.com/articles/editing-files-in-another-user-s-repository/).
+
 ## Extending other ontologies
 
+Onotologies namespaces, such as [Schema.org](http://schema.org), provide a core, basic vocabulary for describing the kind of entities the most common web applications need. There is often a need for more specialized and/or deeper vocabularies, that build upon the core. [Schema.org](http://schema.org) The extension mechanisms facilitate the creation of such additional vocabularies.
+
 [See Extension Mechanism](https://schema.org/docs/extension.html) on Schema.org website.
+
+`@vocab` actually allow you to use an existing vocabulary in an inherited entity definition  
 
 This entity is an overlay on top of the core Schema's [Winery](https://schema.org/Winery) definition
 
 ```
 {
-  "@context": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0",
-  "@vocab": [
-    "https://schema.org/Winery"
+  "@context": [ 
+      "http://schema.org/",
+      { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
   ],
-  "@type": "Winegrower"          <-- this entity type, in this context
-  "name" : "Durand Vigneron"     <-- name property inherited from Schema.org's Winery entity
+  "@type": "Winegrower"              <-- this entity type, defined in this context
+  "ow:isLandowner" : true,           <-- a property from this type
+  "name" : "Durand Vigneron"         <-- name property inherited from Schema.org's Winery entity
 }
 ```
 
-## Definitions
+This approach also allow to define french terms spelled sub-types: `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`, which are more precise entities from the english `winegrower`.
 
-__Proposal / RFC__:
+## Inherited definitions
+
+### `memberOf`
 
 Property    | Expected Type               | Type origin                        | Description | Example
 ----------- | --------------------------- | ---------------------------------- | ----------- | -------
@@ -35,12 +44,31 @@ Property    | Expected Type               | Type origin                        |
 }
 ```
 
+## New definitions
+
+### `isLandowner`
+
+Property    | Expected Type               | Description | Example
+----------- | --------------------------- | ----------- | -------
+`ow:isLandowner` | [`Boolean`](https://schema.org/Boolean) | owns the lands where he produces his wines | `true`
+
+```json
+{
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Vigneron Indépendant",
+    "url": "http://www.vigneron-independant.com"
+}
+```
+
+french spelled 
+
 ## Full example
 
 
 ```js
 {
-  "@context": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0",
+  "@context": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/",
   "@vocab": [
     "https://schema.org"
   ],
