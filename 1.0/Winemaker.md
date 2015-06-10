@@ -98,7 +98,7 @@ Example:
       { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
   ],
   "@type": "Winemaker",             <-- this entity type, defined in this context
-  "name" : "Durand Vigneron"         <-- name property inherited from Schema.org's Winery entity
+  "name" : "Durand Vigneron"        <-- name property inherited from Schema.org's Winery entity
 }
 ```
 
