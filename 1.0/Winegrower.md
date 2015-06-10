@@ -74,7 +74,7 @@ Property    | Expected Type               | Description | Example
   ],
   "@type": "Winegrower",
   "ow:isLandowner": true,  
-  "address":
+  "address": {
     "@type": "PostalAddress",
     "addressLocality": "Sainte Lumine de Clisson",
     "addressRegion": "Pays de la Loire",
