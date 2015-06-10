@@ -5,7 +5,7 @@ Current status: Proposal, RFC. Use [Github online editor to propose your changes
 
 ## Extending other ontologies
 
-Onotologies namespaces, such as [Schema.org](http://schema.org), provide a core, basic vocabulary for describing the kind of entities the most common web applications need. There is often a need for more specialized and/or deeper vocabularies, that build upon the core. [Schema.org](http://schema.org) The extension mechanisms facilitate the creation of such additional vocabularies.
+Ontologies namespaces, such as [Schema.org](http://schema.org), provide a core, basic vocabulary for describing the kind of entities the most common web applications need. There is often a need for more specialized and/or deeper vocabularies, that build upon the core. [Schema.org](http://schema.org) The extension mechanisms facilitate the creation of such additional vocabularies.
 
 [See Extension Mechanism](https://schema.org/docs/extension.html) on Schema.org website.
 
