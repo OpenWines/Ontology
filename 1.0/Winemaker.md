@@ -9,6 +9,44 @@
 
 (source: [wiktionary](https://en.wiktionary.org/wiki/winemaker))
 
+## Full example (JSON-LD format)
+
+```json
+{
+  "@context": [ 
+      "http://schema.org/",
+      { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
+  ],
+  "@type": "Winemakerr",
+  "ow:isLandowner": true,  
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sainte Lumine de Clisson",
+    "addressRegion": "Pays de la Loire",
+    "postalCode": "44190",
+    "streetAddress": "26 les Défois"
+  },
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Syndicat Défense Des AOC Muscadet",
+    "url" : "http://www.muscadet-grosplant.fr/",
+    "telephone": "+33 2 40 80 14 90"
+  },
+  "businessRegistration": "RCS Nantes 514582691",
+  "isicV4": "11.02",
+  "name": "Durand Vigneron",
+  "openingHours": [
+    "Mo-Sa 11:00-14:30",
+    "Mo-Th 17:00-21:30",
+    "Fr-Sa 17:00-22:00"
+  ],
+  "telephone": "+33 2 40 54 70 03",
+  "fax": "+33 2 40 54 70 03",
+  "email": "mailto:durand.verteprairie@wanadoo.fr",
+  "url": "http://www.durand-vigneron.com"
+}
+```
+
 ## THIS IS A DRAFT
 
 Current status: Proposal, RFC. Use [Github online editor to propose your changes](https://help.github.com/articles/editing-files-in-another-user-s-repository/).
@@ -91,44 +129,5 @@ Property    | Expected Type               | Description | Example
   "@type": "Winemaker",
   "ow:isLandowner": true,
   "name" : "Durand Vigneron"
-}
-```
-
-## Full example
-
-
-```json
-{
-  "@context": [ 
-      "http://schema.org/",
-      { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
-  ],
-  "@type": "Winemakerr",
-  "ow:isLandowner": true,  
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Sainte Lumine de Clisson",
-    "addressRegion": "Pays de la Loire",
-    "postalCode": "44190",
-    "streetAddress": "26 les Défois"
-  },
-  "memberOf": {
-    "@type": "Organization",
-    "name": "Syndicat Défense Des AOC Muscadet",
-    "url" : "http://www.muscadet-grosplant.fr/",
-    "telephone": "+33 2 40 80 14 90"
-  },
-  "businessRegistration": "RCS Nantes 514582691",
-  "isicV4": "11.02",
-  "name": "Durand Vigneron",
-  "openingHours": [
-    "Mo-Sa 11:00-14:30",
-    "Mo-Th 17:00-21:30",
-    "Fr-Sa 17:00-22:00"
-  ],
-  "telephone": "+33 2 40 54 70 03",
-  "fax": "+33 2 40 54 70 03",
-  "email": "mailto:durand.verteprairie@wanadoo.fr",
-  "url": "http://www.durand-vigneron.com"
 }
 ```
