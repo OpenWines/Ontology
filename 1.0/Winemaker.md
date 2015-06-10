@@ -41,7 +41,7 @@ This entity is an overlay on top of the core Schema's [Winery](https://schema.or
 }
 ```
 
-This approach also allow to define french terms spelled sub-types: `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`, which are more precise entities from the english `winegrower` or `winemaker`.
+This approach allows also to define french terms spelled sub-types: `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`, or the english `winegrower`.
 
 ## Inherited definitions
 
@@ -73,7 +73,7 @@ These are the properties actually proposed in addition, in the [OpenWines.org](h
 
 ### `isLandowner`
 
-Motivation: In both french and english vocabulary, many sub-types exists to define more precisely the person that make wine : (english) `winemaker`, `winegrower`, (french) `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`. Each one is a variant of a global job family, but some of them have common the fact that they describe a person who owns the lands where the grapes are grown and harvested.
+Motivation: In both french and english vocabulary, many sub-types exists to define more precisely the person that make wine : (english) `winegrower`, (french) `vigneron`, `viticulteur`, `viniviticulteur`, `récoltant`. Each one is a variant of a global job family, but some of them have common the fact that they describe a person who owns the lands where the grapes are grown and harvested.
 
 Property    | Expected Type               | Description | Example
 ----------- | --------------------------- | ----------- | -------
