@@ -28,7 +28,9 @@ This approach also allow to define french terms spelled sub-types: `vigneron`, `
 
 ## Inherited definitions
 
-### `memberOf`
+These properties are given only for information, the whole list can be found in the [`Winegrower`] parent type definition on [Schema.org](https://schema.org), so this list is not intended to be exhaustive.
+
+### Ex: Schema's [`memberOf`](https://schema.org/memberOf)
 
 Property    | Expected Type               | Type origin                        | Description | Example
 ----------- | --------------------------- | ---------------------------------- | ----------- | -------
@@ -44,6 +46,8 @@ Property    | Expected Type               | Type origin                        |
 ```
 
 ## New definitions
+
+These are the properties proposed in addition, in the [OpenWines.org](http://openwines.org) namespace.
 
 ### `isLandowner`
 
