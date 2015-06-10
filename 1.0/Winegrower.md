@@ -88,7 +88,7 @@ Property    | Expected Type               | Description | Example
     "telephone": "+33 2 40 80 14 90"
   },
   "businessRegistration": "RCS Nantes 514582691",
-  "isicV4": "11.02"
+  "isicV4": "11.02",
   "name": "Durand Vigneron",
   "openingHours": [
     "Mo-Sa 11:00-14:30",
