@@ -19,8 +19,7 @@ This entity is an overlay on top of the core Schema's [Winery](https://schema.or
       "http://schema.org/",
       { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
   ],
-  "@type": "Winegrower"              <-- this entity type, defined in this context
-  "ow:isLandowner" : true,           <-- a property from this type
+  "@type": "Winegrower",             <-- this entity type, defined in this context
   "name" : "Durand Vigneron"         <-- name property inherited from Schema.org's Winery entity
 }
 ```
@@ -54,14 +53,15 @@ Property    | Expected Type               | Description | Example
 
 ```json
 {
-  "memberOf": {
-    "@type": "Organization",
-    "name": "Vigneron Indépendant",
-    "url": "http://www.vigneron-independant.com"
+  "@context": [ 
+      "http://schema.org/",
+      { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
+  ],
+  "@type": "Winegrower",
+  "ow:isLandowner" : true,
+  "name" : "Durand Vigneron"
 }
 ```
-
-french spelled 
 
 ## Full example
 
