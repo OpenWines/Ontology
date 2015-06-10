@@ -3,6 +3,16 @@
 
 Current status: Proposal, RFC. Use [Github online editor to propose your changes](https://help.github.com/articles/editing-files-in-another-user-s-repository/).
 
+## The JSON-LD format choice
+
+The JSON-LD format choice was [motivated in this article](http://openwines.eu/data-formats.html).
+
+Proposing a JSON-LD format definition is compliant with both linked-data objectives, semantic web, and interoperability concerns, being a RDFa compatible format.
+
+Learn more about [JSON-LD](http://www.w3.org/TR/json-ld/) (full spec on W3C)
+
+[Schema.org](http://schema.org) already proposes a JSON-LD output for each entity it defines.
+
 ## Extending other ontologies
 
 Ontologies namespaces, such as [Schema.org](http://schema.org), provide a core, basic vocabulary for describing the kind of entities the most common web applications need. There is often a need for more specialized and/or deeper vocabularies, that build upon the core. [Schema.org](http://schema.org) extension mechanisms facilitate the creation of such additional vocabularies.
