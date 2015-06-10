@@ -3,7 +3,7 @@
 
 # Winemaker
 
-`winemaker`: (plural `winemakers`)
+`winemaker` (plural `winemakers`)
 
 - a person or company that makes wine
 
