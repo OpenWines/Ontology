@@ -79,15 +79,15 @@ Learn more about [JSON-LD](http://www.w3.org/TR/json-ld/) (full spec on W3C)
 
 [Schema.org](http://schema.org) already proposes a JSON-LD output for each entity it defines.
 
-## Extending other ontologies
+## Entity inheritance
 
-Ontologies namespaces, such as [Schema.org](http://schema.org), provide a core, basic vocabulary for describing the kind of entities the most common web applications need. There is often a need for more specialized and/or deeper vocabularies, that build upon the core. [Schema.org](http://schema.org) extension mechanisms facilitate the creation of such additional vocabularies.
+This `Winemaker` entity described here is an overlay on top of the core Schema's [Winery](https://schema.org/Winery) definition. The [`Winery`](https://schema.org/Winery) parent type definition on [Schema.org](https://schema.org)
+
+As of [JSON-LD spec](http://www.w3.org/TR/json-ld/), the `@vocab` property actually allows us to use such existing vocabulary in this new inherited entity definition.
+
+[Schema.org](http://schema.org) in an ontologies namesspace that provides a core, basic vocabulary for describing the kind of entities the most common web applications need. There is often a need for more specialized and/or deeper vocabularies, that build upon the core. [Schema.org](http://schema.org) extension mechanisms facilitate the creation of such additional vocabularies.
 
 [See how Extension Mechanism works](https://schema.org/docs/extension.html) on Schema.org website.
-
-`@vocab` actually allows you to use an existing vocabulary in an inherited entity definition  
-
-This entity is an overlay on top of the core Schema's [Winery](https://schema.org/Winery) definition.
 
 Example:
 
@@ -106,7 +106,7 @@ This approach allows also to define french terms spelled sub-types: `vigneron`, 
 
 ## Inherited definitions
 
-These properties are given only for information, the whole list can be found in the [`Winery`] parent type definition on [Schema.org](https://schema.org), so this list is not intended to be exhaustive.
+These properties are given only for information, the whole list can be found in the [`Winery`](https://schema.org/Winery) parent type definition on [Schema.org](https://schema.org), so this list is not intended to be exhaustive.
 
 ### `memberOf`
 
