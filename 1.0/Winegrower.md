@@ -66,13 +66,14 @@ Property    | Expected Type               | Description | Example
 ## Full example
 
 
-```js
+```json
 {
-  "@context": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/",
-  "@vocab": [
-    "https://schema.org"
+  "@context": [ 
+      "http://schema.org/",
+      { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
   ],
   "@type": "Winegrower",
+  "ow:isLandowner" : true,  
   "address":
     "@type": "sc:PostalAddress",
     "addressLocality": "Sainte Lumine de Clisson",
