@@ -158,3 +158,36 @@ Example :
   "name" : "Durand Vigneron"
 }
 ```
+
+### `label`
+
+Motivation: Winemaker's labels must not be confused with wine's labels ("_étiquette du vin_"). Such labels do not refer to a particular product (a wine, a _cuvée_) but is rather attached to the winemaker himself or his company. In concrete terms, a winemaker's label is an organization mark, and Winemaker's labels are usually represented as a logo of such labelling organization.
+
+Property    | Expected Type               | Description | Example
+----------- | --------------------------- | ----------- | -------
+`ow:label` | [`Organization`](https://schema.org/Organization) | One or more labels owned by the winemaker | _see below_
+
+Example :
+
+```json
+{
+  "@context": [ 
+      "http://schema.org/",
+      { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
+  ],
+  "@type": "Winemaker",
+  "ow:label": [
+      {
+          "name": "Vignobles et Découvertes",
+          "@type": "Organization",
+          "url": "http://atout-france.fr/services/le-label-vignobles-decouvertes"
+      },
+      {
+          "name": "Gîtes de France",
+          "@type": "Organization",
+          "url": "http://www.gites-de-france.com"
+      }
+  ],
+  "name" : "Domaine du Moulin de l'Horizon"
+}
+```
