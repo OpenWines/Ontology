@@ -191,3 +191,34 @@ Example :
   "name" : "Domaine du Moulin de l'Horizon"
 }
 ```
+
+### `service`
+
+Motivation: Winemaker's services indicates all kind of services that differ from the main activity of the winemaker, as defined above. Services are not necessarily related to an organization or a label. Services may be free and immaterial. Be aware that winemakers that wouldn't produce any wine and who's essential activities are shifted into  providing _services_ should not then be represented using the actual `winemaker` ontology.
+
+Property    | Expected Type               | Description | Example
+----------- | --------------------------- | ----------- | -------
+`ow:service` | [`Service`](https://schema.org/Service) | One or more services provided by the winemaker | _see below_
+
+Example :
+
+```json
+{
+  "@context": [ 
+      "http://schema.org/",
+      { "ow": "https://github.com/OpenWines/Open-Data/tree/master/Ontologies/1.0/" }
+  ],
+  "@type": "Winemaker",
+  "ow:service": [
+      {
+          "name": "Handicap facilities",
+          "@type": "Service"
+      },
+      {
+          "name": "Payment by bankcard",
+          "@type": "Service"
+      }
+  ],
+  "name" : "Domaine du Moulin Blanc"
+}
+```
